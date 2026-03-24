@@ -54,13 +54,14 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgvProducts.DefaultCellStyle = dataGridViewCellStyle1;
             dgvProducts.Dock = DockStyle.Fill;
-            dgvProducts.Location = new Point(0, 40);
+            dgvProducts.Location = new Point(0, 51);
+            dgvProducts.Margin = new Padding(4);
             dgvProducts.MultiSelect = false;
             dgvProducts.Name = "dgvProducts";
             dgvProducts.ReadOnly = true;
             dgvProducts.RowHeadersVisible = false;
             dgvProducts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvProducts.Size = new Size(984, 621);
+            dgvProducts.Size = new Size(984, 610);
             dgvProducts.TabIndex = 3;
             // 
             // panelTop
@@ -69,18 +70,20 @@
             panelTop.Controls.Add(btnLogin);
             panelTop.Dock = DockStyle.Top;
             panelTop.Location = new Point(0, 0);
+            panelTop.Margin = new Padding(4);
             panelTop.Name = "panelTop";
-            panelTop.Padding = new Padding(0, 0, 0, 10);
-            panelTop.Size = new Size(984, 40);
+            panelTop.Padding = new Padding(0, 0, 0, 13);
+            panelTop.Size = new Size(984, 51);
             panelTop.TabIndex = 2;
             // 
             // lblUserName
             // 
             lblUserName.AutoSize = true;
             lblUserName.Dock = DockStyle.Right;
-            lblUserName.Location = new Point(796, 0);
+            lblUserName.Location = new Point(746, 0);
+            lblUserName.Margin = new Padding(4, 0, 4, 0);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(38, 15);
+            lblUserName.Size = new Size(45, 19);
             lblUserName.TabIndex = 6;
             lblUserName.Text = "label1";
             lblUserName.TextAlign = ContentAlignment.MiddleRight;
@@ -91,21 +94,26 @@
             btnLogin.Dock = DockStyle.Right;
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Location = new Point(834, 0);
+            btnLogin.Location = new Point(791, 0);
+            btnLogin.Margin = new Padding(4);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(150, 30);
+            btnLogin.Size = new Size(193, 38);
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Выход";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += BtnLogut_Click;
             // 
             // FormGoods
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(984, 661);
             Controls.Add(dgvProducts);
             Controls.Add(panelTop);
+            Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Margin = new Padding(4);
             Name = "FormGoods";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Список товаров";
             ((System.ComponentModel.ISupportInitialize)dgvProducts).EndInit();
             panelTop.ResumeLayout(false);
