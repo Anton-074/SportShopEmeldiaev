@@ -19,11 +19,11 @@ public partial class Order
 
     public int Code { get; set; }
 
-    public virtual Address IdAddressNavigation { get; set; } = null!;
+    public virtual Address Address { get; set; } = null!;
 
-    public virtual Status IdStatusNavigation { get; set; } = null!;
+    public virtual Status Status { get; set; } = null!;
 
-    public virtual User IdUserNavigation { get; set; } = null!;
+    public virtual User User { get; set; } = null!;
 
     public virtual ICollection<OrdersGood> OrdersGoods { get; set; } = new List<OrdersGood>();
 }

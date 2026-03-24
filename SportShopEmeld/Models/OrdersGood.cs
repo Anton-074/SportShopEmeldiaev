@@ -13,7 +13,7 @@ public partial class OrdersGood
 
     public int Count { get; set; }
 
-    public virtual Good IdGoodNavigation { get; set; } = null!;
+    public virtual Good Good { get; set; } = null!;
 
-    public virtual Order IdOrderNavigation { get; set; } = null!;
+    public virtual Order Order { get; set; } = null!;
 }

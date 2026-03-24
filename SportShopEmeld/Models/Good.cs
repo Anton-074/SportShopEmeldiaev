@@ -27,13 +27,13 @@ public partial class Good
 
     public string? Description { get; set; }
 
-    public virtual Category IdCategoryNavigation { get; set; } = null!;
+    public virtual Category Category { get; set; } = null!;
 
-    public virtual Manufacture IdManufactureNavigation { get; set; } = null!;
+    public virtual Manufacture Manufacture { get; set; } = null!;
 
-    public virtual Supplier IdSupplierNavigation { get; set; } = null!;
+    public virtual Supplier Supplier { get; set; } = null!;
 
-    public virtual Unit IdUnitNavigation { get; set; } = null!;
+    public virtual Unit Unit { get; set; } = null!;
 
     public virtual ICollection<OrdersGood> OrdersGoods { get; set; } = new List<OrdersGood>();
 }
